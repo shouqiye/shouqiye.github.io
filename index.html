@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiye Shou's homepage</title>
+
+    <style>
+      .link-button {
+        display: inline-block;
+        padding: 8px 14px;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #222;
+        background: #f5f5f5;
+      }
+    </style>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f7f9fc;
+            color: #333;
+        }
+
+/*        header {
+            background: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+*/
+
+        header {
+            position: relative;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+
+            background: url('banner1.png') center/cover no-repeat;
+        }
+
+        /* 加一层暗色遮罩，保证文字清晰 */
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* 让文字浮在遮罩上 */
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            border-left: 4px solid #007aff;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Qiye Shou's homepage</h1>
+    <p>最爱湖东行不足，绿杨阴里白沙堤</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#alice">ALICE</a>
+        <a href="#na61">NA61/SHINE</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About</h2>
+    <div class="card">
+        <p style="line-height: 1.5;">
+            I'm a tenured Associate Professor at the Institute of Modern Physics, Fudan University.<br>
+            My research field is experimental high-energy nuclear physics, using heavy-ion collisions to study the properties of nuclei and the Quark-Gluon Plasma (QGP).<br>
+            I'm a member of the LHC-ALICE Collaboration and the SPS-NA61 Collaboration.
+        </p>
+        <p>My <a class="link-button" target="_blank" href="https://inspirehep.net/authors/1403408">INSPIRE-HEP</a></p>
+    </div>
+</section>
+
+<section id="alice">
+    <h2>ALICE</h2>
+
+    <div class="card">
+        <!-- <h3>项目 1</h3> -->
+        <p>Correlations: 
+            <a class="link-button" target="_blank" href="https://alice-publications.web.cern.ch/node/9603">CMW</a>
+            <a class="link-button" target="_blank" href="https://alice-publications.web.cern.ch/node/12787">CVE</a>
+            <a class="link-button" target="_blank" href="https://alice-figure.web.cern.ch/node/34153">PID CME (Prelim. Fig.)</a>
+        </p>
+        <p>Light nucei: 
+            <a class="link-button" target="_blank" href="https://alice-publications.web.cern.ch/node/10995">Hypertriton in Run 2 Pb-Pb</a>
+            <a class="link-button" target="_blank" href="https://alice-publications.web.cern.ch/node/12394">pp pd femto in Run 2 Pb-Pb</a>
+        </p>
+    </div>
+</section>
+
+<section id="na61">
+    <h2>NA61/SHINE</h2>
+    <div class="card">
+        <p>For the moment, we're working on flow measurements and are enthusiastic about the vertex detector upgrade.</p>
+    </div>
+</section>
+
+<footer>
+    <!-- <br/> -->
+    <p>It is by logic that we prove, but by intuition that we discover.<br>
+    To know how to criticize is good, to know how to create is better.<br>
+    - Henri Poincaré</p>
+    <!-- <br/> -->
+<!--     <p>失敗こそ うちの宝になるんだから、なら 色々実験をしてみて、何度も何度も失敗を重ねるんだ、<br>すぐに答えを 見つけ出そうとせずに、もっと開発を楽しめ</p>
+    <p>- 「下町ロケット」</p>
+    <br/> -->
+</footer>
+
+</body>
+</html>
